@@ -1,8 +1,8 @@
 <?php
-   $phone = "919891119";
+   $phone = "11828";
    $file = basename($_SERVER['PHP_SELF']);
    $page = str_replace(".php", "", $file);
-   $footerInformation = "Puedes llamar al teléfono " .  $phone . " de forma totalmente gratuita y le atenderemos sin compromiso."; 
+   $footerInformation = "Servicio de Información telefónica prestado por Duck Telecomunicaciones S.L. 3,03€ impuestos incluidos es el coste por minuto de esta llamada"; 
    $mainTitle = "Energía España Renovable";
     $titles = [
         "index.php" =>  $mainTitle . " | Inicio",

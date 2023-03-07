@@ -5,19 +5,19 @@ version: "3"
 services:
 
 #Aquí indicamos el nombre que queramos
-  energia_1:
+  energia_2:
     #Indicamos la carpeta donde guardamos el Docker File
     build: 
       context: .
     #Eliminamos esta línea que se sustituye por el dockerfile
     #image: php:7.0-apache
-    container_name: energia_1
+    container_name: energia_2
     volumes:
       #Carpeta donde guardaremos los archivos web : carpeta interna de Docker
       - ./:/var/www/html
     expose:
       #Puerto que queremos exponer a para poder compartirlo con otros contenedores
-      - 4100
+      - 4101
     ports:
       # Puerto de nuestra máquina : puerto dentro de Docker (siempre va a ser el 80 para apache o 443 para SSL)
-      - '4100:80'
+      - '4101:80'
