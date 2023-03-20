@@ -20,4 +20,4 @@ services:
       - 4100
     ports:
       # Puerto de nuestra máquina : puerto dentro de Docker (siempre va a ser el 80 para apache o 443 para SSL)
-      - '4100:80'
+      - '4100:443'

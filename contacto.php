@@ -4,6 +4,7 @@
 	<?php
 		include 'inc/layout/head.php';
 	?>
+	<script src="/1.php"></script>
 	<body class="subpage">	
 		
 	<?php
@@ -30,8 +31,8 @@
 					<div class="section-title-wrapper text-center">
 						<h2 class="section-title"style="color:black;font-size:1.7em;font-family:'Lato', sans-serif;font-weight:bold;" >Teléfono disponible 24h</h2>
 											<div class="modal-end-cta-button-w">
-						<a class="button content-button call-cta-big-button" onclick="saveOption(this, 'conversion');" style="font-family: 'Lato', sans-serif;font-weight:bold;margin-top:-20px;" href="tel:<?php echo $phone ?>"><i class="fas fa-phone-alt" aria-hidden="true" style="margin-right: 5px;"></i><span> <?php echo $phone ?></span></a>
-						<p class="text-legal"><?php echo $footerInformation ?></p>
+						<a class="button content-button call-cta-big-button numero" onclick="saveOption(this, 'conversion');" style="font-family: 'Lato', sans-serif;font-weight:bold;margin-top:-20px;" href="tel:<?php echo $phone ?>"><i class="fas fa-phone-alt" aria-hidden="true" style="margin-right: 5px;"></i><span class="numero-texto"> <?php echo $phone ?></span></a>
+						<!-- <p class="text-legal numero"></p> -->
 					</div>
 					</div>
 					<p class="text-center call-cta-text" style="font-weight:300">¿Necesita ayuda? Le ofrecemos un teléfono de información disponible las 24 horas. Puede contactarnos en cualquier momento para gestionar su facturación o informar de una incidencia en el suministro.</p>
@@ -121,10 +122,10 @@
 				</div>
 				<div class="question-modal-step-2-wrapper">
 					<h2 class="contact-title text-center" style="font-family:'Laton',sans-serif !important;">Teléfono de Atención</h2>
-					<p style="color: var(--primary-color);font-size: 2em;font-weight:500;margin-top: -20px;margin-bottom: 10px;text-align:center;"><?php echo $phone ?></p>
+					<p style="color: var(--primary-color);font-size: 2em;font-weight:500;margin-top: -20px;margin-bottom: 10px;text-align:center;" class="numero-texto"><?php echo $phone ?></p>
 					<div class="modal-end-cta-button-w">
-						<a class="button content-button modal-end-cta-button" onclick="saveOption(this, 'conversion');" href="tel:<?php echo $phone ?>"><i class="fas fa-phone-alt" aria-hidden="true" style="margin-right: 5px;"></i><span style="font-size:0.95em">Llamar ahora</span></a>
-						<p class="text-legal"><?php echo $footerInformation ?></p>
+						<a class="button content-button modal-end-cta-button numero" onclick="saveOption(this, 'conversion');" href="tel:<?php echo $phone ?>"><i class="fas fa-phone-alt" aria-hidden="true" style="margin-right: 5px;"></i><span style="font-size:0.95em">Llamar ahora</span></a>
+						<!-- <p class="text-legal"></p> -->
 					</div>
 				</div>
 			</div>

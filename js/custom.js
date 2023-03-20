@@ -1,5 +1,5 @@
 // Get query parameters
-const params = new Proxy(new URLSearchParams(window.location.search), {
+let params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
 });
 let {
