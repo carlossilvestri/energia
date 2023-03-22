@@ -23,6 +23,24 @@ if (company) {
         case "cepsa":
             useRed();
             break;
+        case "red":
+            useRed();
+            break;
+        case "blue":
+            useBlue();
+            break;
+        case "orange":
+            useOrange();
+            break;
+        case "yellow":
+            useYellow();
+            break;
+        case "purple":
+            usePurple();
+            break;
+        case "gray":
+            useGray();
+            break;
         default:
             break;
     }
@@ -63,6 +81,16 @@ function useYellow() {
 function useOrange() {
     $("body").get(0).style.setProperty("--primary-color", "#FF5733");
     $("body").get(0).style.setProperty("--secondary-color", "#FF5733");
+}
+function usePurple() {
+    $("body").get(0).style.setProperty("--primary-color", "#800080");
+}
+
+function useGray() {
+    $("body").get(0).style.setProperty("--primary-color", "#808080");
+}
+function useYellow() {
+    $("body").get(0).style.setProperty("--primary-color", "#FFFF00");
 }
 const actualDomain = window.location.hostname;
 const hostname = window.location.hostname.split(".")[0];
