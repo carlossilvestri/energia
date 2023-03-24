@@ -17,8 +17,8 @@
 						<div class="hero-contact-content section-contact-content">
 							<span class="hero-contact-title" style="font-family: 'Lato', sans-serif;">¿Qué necesita?</span>?</span>
 							<div class="contact-cta-buttons-wrapper" style="font-family: 'Lato', sans-serif;">
-								<a class="button content-button call-cta-button call-cta-button-f"><span>Contacto Clientes</span></a>
-								<a class="button content-button call-cta-button "><span>Gestionar Incidencia</span></a>
+								<a class="button content-button call-cta-button call-cta-button-f"><span class="black-letters">Contacto Clientes</span></a>
+								<a class="button content-button call-cta-button "><span class="black-letters">Gestionar Incidencia</span></a>
 							</div>
 						</div>
 					</div>
@@ -29,9 +29,11 @@
 			<div class="container" style="margin-top:-100px;">
 				<div class="section-content section-call-cta-content">
 					<div class="section-title-wrapper text-center">
-						<h2 class="section-title"style="color:black;font-size:1.7em;font-family:'Lato', sans-serif;font-weight:bold;" >Teléfono disponible 24h</h2>
+					<h2 class="section-title quieres-texto"style="color:black;font-size:1.7em;font-family:'Lato', sans-serif;font-weight:bold;" ></h2>
+					<br/>
+					<h2 class="section-title"style="color:black;font-size:1.7em;font-family:'Lato', sans-serif;font-weight:bold;" >Teléfono disponible 24h</h2>
 											<div class="modal-end-cta-button-w">
-						<a class="button content-button call-cta-big-button numero" onclick="saveOption(this, 'conversion');" style="font-family: 'Lato', sans-serif;font-weight:bold;margin-top:-20px;" href="tel:<?php echo $phone ?>"><i class="fas fa-phone-alt" aria-hidden="true" style="margin-right: 5px;"></i><span class="numero-texto"> <?php echo $phone ?></span></a>
+						<a class="button content-button call-cta-big-button numero" onclick="saveOption(this, 'conversion');" style="font-family: 'Lato', sans-serif;font-weight:bold;margin-top:-20px;" href="tel:<?php echo $phone ?>"><i class="fas fa-phone-alt" aria-hidden="true" style="margin-right: 5px;"></i><span class="numero-texto black-letters"> <?php echo $phone ?></span></a>
 						<!-- <p class="text-legal numero"></p> -->
 					</div>
 					</div>

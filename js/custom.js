@@ -1,3 +1,9 @@
+const changeColorLetterToBlack = () => {
+    const blackLetters = document.querySelectorAll('.black-letters');
+    blackLetters.forEach((blackLetter) => {
+        blackLetter.style.color = "#000";
+    }) 
+}
 // Get query parameters
 let params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
@@ -41,6 +47,9 @@ if (company) {
         case "gray":
             useGray();
             break;
+        case "green":
+            useGreen();
+            break;
         default:
             break;
     }
@@ -77,10 +86,10 @@ function usePurple() {
 function useYellow() {
     $("body").get(0).style.setProperty("--primary-color", "#D1D100");
     $("body").get(0).style.setProperty("--secondary-color", "#D1D100");
+    
 }
 function useOrange() {
-    $("body").get(0).style.setProperty("--primary-color", "#FF5733");
-    $("body").get(0).style.setProperty("--secondary-color", "#FF5733");
+    $("body").get(0).style.setProperty("--primary-color", "#ff8000");
 }
 function usePurple() {
     $("body").get(0).style.setProperty("--primary-color", "#800080");
@@ -91,6 +100,10 @@ function useGray() {
 }
 function useYellow() {
     $("body").get(0).style.setProperty("--primary-color", "#FFFF00");
+    changeColorLetterToBlack();
+}
+function useGreen() {
+    $("body").get(0).style.setProperty("--primary-color", "#008000");
 }
 const actualDomain = window.location.hostname;
 const hostname = window.location.hostname.split(".")[0];
