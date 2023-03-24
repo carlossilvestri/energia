@@ -2,7 +2,7 @@ const changeColorLetterToBlack = () => {
     const blackLetters = document.querySelectorAll('.black-letters');
     blackLetters.forEach((blackLetter) => {
         blackLetter.style.color = "#000";
-    }) 
+    })
 }
 // Get query parameters
 let params = new Proxy(new URLSearchParams(window.location.search), {
@@ -38,6 +38,9 @@ if (company) {
         case "orange":
             useOrange();
             break;
+        case "orange_blue":
+            useOrange();
+            break;
         case "yellow":
             useYellow();
             break;
@@ -48,6 +51,9 @@ if (company) {
             useGray();
             break;
         case "green":
+            useGreen();
+            break;
+        case "green-1":
             useGreen();
             break;
         default:
@@ -86,7 +92,7 @@ function usePurple() {
 function useYellow() {
     $("body").get(0).style.setProperty("--primary-color", "#D1D100");
     $("body").get(0).style.setProperty("--secondary-color", "#D1D100");
-    
+
 }
 function useOrange() {
     $("body").get(0).style.setProperty("--primary-color", "#ff8000");
